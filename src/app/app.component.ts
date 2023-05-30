@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-store-components';
+  imgParent = 'https://www.w3schools.com/howto/img_avatar.png';
+  showImg = true;
+
+  onLoaded(img: string) {
+    console.log('log padre', img);
+  }
+
+  toggleImg() {
+    this.showImg = !this.showImg;
+  }
 }
